@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="imagenLogo">
+        <img src="imagenes/Logo.png" />
+      </div>
+    </header>
+
+    <main>
+      <div class="textareaContainer">
+        <textarea
+          id="texto"
+          name="textarea"
+          rows="10"
+          cols="50"
+          placeholder="Escribe algo para encriptar..."
+        ></textarea>
+        <div class="botones">
+          <div class="botones"></div>
+          <button type="button" class="btnEncrip" onclick="encriptar()">
+            Encriptar
+          </button>
+          <button type="button" class="btnDesencrip" onclick="desencriptar()">
+            Desencriptar
+          </button>
+        </div>
+      </div>
+      <div class="contenedorIzquierdo">
+        <img src="imagenes/Muñeco.svg" />
+        <div class="texto">
+          <p >
+            <strong id="msjEncontrado">Ningún mensaje fue encontrado </strong>
+            <br />
+          </p>
+          <p id ="msjEncriptado">Ingrese el texto que desea encriptar o desencriptar</p>
+        </div>
+      </div>
+    </main>
+    <script src="/main.js"></script>
+  </body>
+</html>
